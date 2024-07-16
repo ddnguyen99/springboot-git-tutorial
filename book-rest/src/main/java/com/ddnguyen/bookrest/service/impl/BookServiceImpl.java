@@ -2,7 +2,7 @@ package com.ddnguyen.bookrest.service.impl;
 
 import com.ddnguyen.bookrest.domain.Book;
 import com.ddnguyen.bookrest.domain.BookEntity;
-import com.ddnguyen.bookrest.rspositories.BookRepositories;
+import com.ddnguyen.bookrest.rspositories.BookRepository;
 import com.ddnguyen.bookrest.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,14 +10,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class BookServiceImpl implements BookService {
 
-    private final BookRepositories bookRepositories;
+    private final BookRepository bookRepositories;
 
     @Autowired
-    public BookServiceImpl (final BookRepositories bookRepositories) {
+    public BookServiceImpl (final BookRepository bookRepositories) {
         this.bookRepositories = bookRepositories;
     }
 
-    public BookRepositories getBookRepositories() {
+    public BookRepository getBookRepositories() {
         return bookRepositories;
     }
 
