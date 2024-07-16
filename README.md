@@ -1,2 +1,2 @@
-# springboot-git-tutorial
+# springboot-git-practice
 Practice Spring Boot
